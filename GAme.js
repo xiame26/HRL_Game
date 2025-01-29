@@ -131,7 +131,7 @@ const Game = () => {
               {scenarios[currentScenario].text}
             </motion.p>
               <div className="grid grid-cols-1 gap-4">
-                {"Police Power", "Taxation", "Eminent Domain".map((choice) => (
+                {["Police Power", "Taxation", "Eminent Domain".map((choice) => (
                   <Button
                     key={choice}
                     onClick={() => handleAnswer(choice)}
@@ -139,7 +139,7 @@ const Game = () => {
                   >
                     {choice}
                   </Button>
-                ))}
+                ))]}
             </div>
             <div id="emoji" className="text-center text-4xl mt-4"></div>
           </CardContent>
